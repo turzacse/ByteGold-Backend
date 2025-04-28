@@ -33,7 +33,9 @@ app.get("/", (req, res) => {
 
 
 // Schedule to run every hour
-cron.schedule('0 * * * *', () => {
+//schedule to run every minute for testing
+cron.schedule('*/1 * * * *', () => {
+// cron.schedule('0 * * * *', () => {
   console.log('🔄 Running scheduled scraping...');
   scrapeAndSaveKitcoPrices();
 });
