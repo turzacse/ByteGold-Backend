@@ -79,7 +79,7 @@ const getAllKitcoPrices = async (req, res) => {
     res.json(allData);
   } catch (error) {
     console.error('Error fetching all data from DB:', error.message);
-    res.status(500).json({ error: 'Failed to fetch all data.' });
+    res.status(500).json({ error: 'Failed to fetch all data.', msg: error.message });
   }
 };
 

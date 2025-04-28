@@ -28,7 +28,7 @@ mongoose
 
 // Sample Route
 app.get("/", (req, res) => {
-  res.send("Welcome to TakaPaysa API");
+  res.send("Welcome to ByteGold");
 });
 
 
